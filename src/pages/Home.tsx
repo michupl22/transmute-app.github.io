@@ -11,6 +11,7 @@ import {
   FaRightLeft,
   FaCheck,
   FaXmark,
+  FaYoutube,
 } from 'react-icons/fa6'
 import { useSEO } from '../hooks/useSEO'
 import { HOME_METADATA } from '../seo.ts'
@@ -206,6 +207,15 @@ export default function Home() {
             <p className="text-text-muted max-w-2xl mx-auto">
               A clean, modern interface designed for efficiency. Upload, convert, download, that's it.
             </p>
+            <a
+              href="https://www.youtube.com/watch?v=wCa7I_UfpUs"
+              target="_blank"
+              rel="noopener"
+              className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-gray-700 text-text-muted font-semibold hover:text-white hover:border-gray-500 transition-all hover:-translate-y-0.5"
+            >
+              <FaYoutube className="h-5 w-5 text-red-500" />
+              Watch the Video Demo
+            </a>
           </div>
 
           {/* Tab buttons */}
