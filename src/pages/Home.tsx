@@ -16,6 +16,8 @@ import {
 import { useSEO } from '../hooks/useSEO'
 import { HOME_METADATA } from '../seo.ts'
 
+const SCREENSHOTS_BASE_URL = `${import.meta.env.BASE_URL}screenshots/`
+
 const LazyYamlHighlighter = lazy(() =>
   Promise.all([
     import('react-syntax-highlighter/dist/esm/light'),
@@ -64,39 +66,39 @@ const themes = [
 const screenshots = [
   {
     label: 'Login',
-    url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/login.png',
+    url: `${SCREENSHOTS_BASE_URL}login.png`,
   },
   {
     label: 'Workspace',
-    url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/workspace.png',
+    url: `${SCREENSHOTS_BASE_URL}workspace.png`,
   },
   {
     label: 'Post-Conversion',
-    url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/post-conversion.png',
+    url: `${SCREENSHOTS_BASE_URL}post-conversion.png`,
   },
   {
     label: 'Files',
-    url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/files.png',
+    url: `${SCREENSHOTS_BASE_URL}files.png`,
   },
   {
     label: 'Jobs',
-    url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/jobs.png',
+    url: `${SCREENSHOTS_BASE_URL}jobs.png`,
   },
   {
     label: 'Settings',
-    url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/settings.png',
+    url: `${SCREENSHOTS_BASE_URL}settings.png`,
   },
   {
     label: 'Account',
-    url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/account.png',
+    url: `${SCREENSHOTS_BASE_URL}account.png`,
   },
   {
     label: 'User Management',
-    url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/user-management.png',
+    url: `${SCREENSHOTS_BASE_URL}user-management.png`,
   },
   {
     label: 'Statistics',
-    url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/stats.png',
+    url: `${SCREENSHOTS_BASE_URL}stats.png`,
   },
 ]
 
@@ -510,7 +512,7 @@ export default function Home() {
                 className="card-hover rounded-xl overflow-hidden border border-gray-700/50 bg-surface-light/30"
               >
                 <img
-                  src={`https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/${t.name.toLowerCase()}.png`}
+                  src={`${SCREENSHOTS_BASE_URL}${t.name.toLowerCase()}.png`}
                   alt={`${t.name} theme`}
                   className="w-full aspect-video object-cover object-top"
                   width={1920}

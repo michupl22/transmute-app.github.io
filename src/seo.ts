@@ -6,7 +6,7 @@ export interface RouteMetadata {
 
 export const BASE_TITLE = 'Transmute'
 export const SITE_URL = 'https://transmute.sh'
-export const DEFAULT_OG_IMAGE = 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/converter.png'
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/screenshots/workspace.png`
 
 export const HOME_METADATA: RouteMetadata = {
   title: 'Self-Hosted File Converter & Compressor for Images, Video, Audio & More',
