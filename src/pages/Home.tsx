@@ -68,7 +68,7 @@ const screenshots = [
   },
   {
     label: 'Workspace',
-    url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/converter.png',
+    url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/workspace.png',
   },
   {
     label: 'Post-Conversion',
@@ -93,6 +93,10 @@ const screenshots = [
   {
     label: 'User Management',
     url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/user-management.png',
+  },
+  {
+    label: 'Statistics',
+    url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/stats.png',
   },
 ]
 
