@@ -85,6 +85,8 @@ For OIDC configuration variables, please see [OIDC / SSO Integration](/docs/oidc
 
 > **Tip:** You generally don't need to change `DATA_DIR` when using Docker — just mount a volume to `/app/data` as shown in the example Compose file above.
 
+> **Related:** Custom PDF styling uses a file under the data directory (`pdf/custom.css`), not an environment variable. See [PDF Styling](/docs/pdf-styling/).
+
 ### Database Table Names
 
 These control the SQLite table names. You should not change them unless you have a very specific reason.
