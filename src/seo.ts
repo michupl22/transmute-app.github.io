@@ -9,9 +9,9 @@ export const SITE_URL = 'https://transmute.sh'
 export const DEFAULT_OG_IMAGE = 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/converter.png'
 
 export const HOME_METADATA: RouteMetadata = {
-  title: 'Self-Hosted File Converter for Images, Video, Audio & More',
+  title: 'Self-Hosted File Converter & Compressor for Images, Video, Audio & More',
   description:
-    'Transmute is a free, open-source, self-hosted file converter. Convert images, video, audio, data, and documents on your own hardware with no file size limits, no watermarks, and full privacy.',
+    'Transmute is a free, open-source, self-hosted file converter and compressor. Convert and compress images, video, audio, data, documents, and 3D models on your own hardware with no file size limits, no watermarks, and full privacy.',
   path: '/',
 }
 

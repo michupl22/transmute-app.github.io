@@ -67,7 +67,7 @@ const screenshots = [
     url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/login.png',
   },
   {
-    label: 'Converter',
+    label: 'Workspace',
     url: 'https://raw.githubusercontent.com/transmute-app/transmute/refs/heads/main/assets/screenshots/converter.png',
   },
   {
@@ -163,12 +163,12 @@ export default function Home() {
           </h1>
 
           <p className="text-sm sm:text-base uppercase tracking-[0.25em] text-text-muted/60 font-medium mb-10">
-            Convert anything, anywhere.
+            Convert, compress, stay in control.
           </p>
 
           <p className="text-lg sm:text-xl text-text-muted max-w-3xl mx-auto mb-10 leading-relaxed">
-            Transmute is an open-source, self-hosted file converter that handles images,
-            video, audio, data, documents, and more; all on your own hardware.
+            Transmute is an open-source, self-hosted file converter and compressor that handles
+            images, video, audio, data, documents, models, and more; all on your own hardware.
             <span className="block mt-2 text-text-muted/80">No uploads to third-party servers. No file size limits. No watermarks.</span>
           </p>
 
@@ -272,12 +272,12 @@ export default function Home() {
             Supported Conversions
           </h2>
           <p className="text-text-muted max-w-xl mx-auto mb-6">
-            Powered by FFmpeg, Pillow, Pandoc, and more, Transmute converts images, video, documents, fonts, and many other formats.
+            Powered by FFmpeg, Pillow, Pandoc, and more, Transmute converts images, video, documents, 3D models, fonts, and many other formats.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2 mb-10">
             {[
-              'Image', 'Video', 'Audio', 'Document', 'Data', 'Diagrams', 'Fonts', 'Subtitles'
+              'Image', 'Video', 'Audio', 'Document', 'Data', 'Diagrams', '3D Models', 'Fonts', 'Subtitles'
             ].map((cat) => (
               <span
                 key={cat}
@@ -295,6 +295,39 @@ export default function Home() {
             <FaRightLeft className="h-4 w-4" />
             Browse All Conversions
           </Link>
+        </div>
+      </section>
+
+      <div className="divider-gradient h-px" />
+
+      {/* ────────────── Compression ────────────── */}
+      <section className="py-20 sm:py-28 bg-surface-dark">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary mb-4 tracking-wide uppercase">
+              New in v2.0
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-3">
+              Now with File Compression
+            </h2>
+            <p className="text-text-muted max-w-2xl mx-auto">
+              Transmute doesn't just convert between formats, it can shrink your files too. Make
+              images, PDFs, audio, video, and GIFs smaller while keeping them in the same format.
+              Pick a compression level to strike the right balance between quality and size, all
+              running privately on your own hardware.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-2">
+            {['Images', 'PDF', 'Audio', 'Video'].map((cat) => (
+              <span
+                key={cat}
+                className="px-3 py-1.5 rounded-lg text-sm font-medium bg-surface-light/50 border border-gray-700/50 text-text-muted"
+              >
+                {cat}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -462,7 +495,7 @@ export default function Home() {
               Built-in Themes
             </h2>
             <p className="text-text-muted max-w-xl mx-auto">
-              Choose from seven carefully crafted themes. Switch between dark and light modes to match your setup.
+              Choose from seven carefully crafted themes. Switch between dark and light modes to match your setup. Admins can also create custom color themes that everyone can use.
             </p>
           </div>
 

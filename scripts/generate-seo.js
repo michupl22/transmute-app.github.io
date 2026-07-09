@@ -117,9 +117,9 @@ function parseDocSections(doc) {
 
 const INTRO = `# Transmute
 
-> Transmute is a free, open-source, self-hosted file converter. Convert images, video, audio, data, documents, and more on your own hardware with Docker. No file size limits, no watermarks, no third-party uploads — full privacy.
+> Transmute is a free, open-source, self-hosted file converter and compressor. Convert and compress images, video, audio, data, documents, 3D models, and more on your own hardware with Docker. No file size limits, no watermarks, no third-party uploads — full privacy.
 
-Transmute is a self-hosted alternative to cloud-based file converters like CloudConvert, FreeConvert, and Convertio. It runs entirely on your own hardware via Docker, keeping all files private. It supports converting between hundreds of formats across images (PNG, JPG, WebP, SVG, BMP, HEIC), video (MKV, MP4, MOV, AVI, WebM), audio (MP3, WAV, FLAC, AAC, OGG), documents (PDF, DOCX, TXT, Markdown, HTML), data (CSV, JSON, YAML, Parquet), diagrams (draw.io), fonts, subtitles, and more. It has a clean web UI, a full REST API, built-in authentication with per-user data isolation, and seven built-in themes.
+Transmute is a self-hosted alternative to cloud-based file converters like CloudConvert, FreeConvert, and Convertio. It runs entirely on your own hardware via Docker, keeping all files private. It supports converting between hundreds of formats across images (PNG, JPG, WebP, SVG, BMP, HEIC), video (MKV, MP4, MOV, AVI, WebM), audio (MP3, WAV, FLAC, AAC, OGG), documents (PDF, DOCX, TXT, Markdown, HTML), data (CSV, JSON, YAML, Parquet), 3D models (STL, OBJ, PLY, GLB, 3MF, DXF), diagrams (draw.io), fonts, subtitles, and more. It also compresses images, PDFs, audio, video, and GIFs to reduce file size while keeping the same format, with simple compression levels to balance quality and size. It has a clean web UI, a full REST API, built-in authentication with per-user data isolation, and seven built-in themes.
 
 - License: MIT
 - Source Code: https://github.com/transmute-app/transmute
@@ -128,7 +128,7 @@ Transmute is a self-hosted alternative to cloud-based file converters like Cloud
 // ── Static pages (non-doc routes) ────────────────────────────────────
 
 const STATIC_PAGES = [
-  { path: '/',             changefreq: 'weekly', priority: '1.0', label: 'Home', desc: 'Overview of the self-hosted file converter.' },
+  { path: '/',             changefreq: 'weekly', priority: '1.0', label: 'Home', desc: 'Overview of the self-hosted file converter and compressor.' },
   { path: '/docs/',        changefreq: 'weekly', priority: '0.8' },
   { path: '/conversions/', changefreq: 'daily',  priority: '0.9', label: 'Supported Conversions', desc: 'Browse every file format conversion supported by Transmute.' },
 ]

@@ -19,7 +19,7 @@ export default function Footer() {
               <span className="text-lg font-bold text-primary">Transmute</span>
             </div>
             <p className="text-sm text-text-muted leading-relaxed">
-              Self-hosted file converter for images, video, audio, data, documents, and more.
+              Self-hosted file converter & compressor for images, video, audio, data, documents, and more.
             </p>
           </div>
 

@@ -1,12 +1,12 @@
 # Transmute Website
 
-The marketing and documentation website for [Transmute](https://github.com/transmute-app/transmute) — a free, open-source, self-hosted file converter.
+The marketing and documentation website for [Transmute](https://github.com/transmute-app/transmute) — a free, open-source, self-hosted file converter and compressor.
 
 **Live at [transmute.sh](https://transmute.sh/)**
 
 ## About Transmute
 
-Transmute lets you convert images, video, audio, data, documents, and diagrams on your own hardware — no file size limits, no watermarks, and full privacy. See the [main repository](https://github.com/transmute-app/transmute) for the application itself.
+Transmute lets you convert images, video, audio, data, documents, 3D models, and diagrams on your own hardware — no file size limits, no watermarks, and full privacy. It can also compress images, PDFs, audio, video, and GIFs to shrink files while keeping their format. See the [main repository](https://github.com/transmute-app/transmute) for the application itself.
 
 ## Tech Stack
 
