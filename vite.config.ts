@@ -171,9 +171,17 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'highlight': ['highlight.js', 'react-syntax-highlighter'],
+        codeSplitting: {
+          groups: [
+            {
+              name: 'highlight',
+              test: /[\\/]node_modules[\\/](highlight\.js|lowlight|refractor|react-syntax-highlighter)[\\/]/,
+            },
+            {
+              name: 'react-vendor',
+              test: /[\\/]node_modules[\\/](react|react-dom|react-router|react-router-dom)[\\/]/,
+            },
+          ],
         },
       },
     },
