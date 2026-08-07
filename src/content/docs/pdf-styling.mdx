@@ -1,0 +1,83 @@
+---
+title: PDF Styling
+description: Customize the look of Markdown and document to PDF conversions with a CSS file in the data directory.
+order: 12
+---
+
+# PDF Styling
+
+When Transmute converts Markdown and other documents to PDF (via Pandoc / WeasyPrint), it applies a built-in compact stylesheet by default. That reduces large fonts and margins so short documents do not spill across unnecessary pages.
+
+You can override that styling with your own CSS. No environment variable or Settings UI option is required — place a file at a conventional path under the data directory, or bind-mount one in Docker.
+
+---
+
+## Default Behaviour
+
+If `data/pdf/custom.css` is **not** present, Transmute uses its built-in compact CSS for PDF output.
+
+If that file **is** present, Transmute uses it instead for document → PDF conversions.
+
+---
+
+## Custom CSS Path
+
+| Location | Path |
+|----------|------|
+| On disk (relative to `DATA_DIR`) | `pdf/custom.css` |
+| Inside the Docker container | `/app/data/pdf/custom.css` |
+
+The `pdf/` folder under the data directory is created automatically on startup. You only need to add `custom.css`.
+
+Your stylesheet can set page size, margins, fonts (including `@font-face`), heading sizes, list spacing, and other print-oriented rules.
+
+---
+
+## Docker: Bind-Mount a File
+
+Mount a host stylesheet directly onto the conventional path:
+
+```yaml
+services:
+  transmute:
+    image: ghcr.io/transmute-app/transmute:latest
+    container_name: transmute
+    restart: unless-stopped
+    ports:
+      - 3313:3313
+    volumes:
+      - transmute_data:/app/data
+      - ./pdf-custom.css:/app/data/pdf/custom.css:ro
+    healthcheck:
+      test:
+        - "CMD"
+        - "wget"
+        - "-q"
+        - "-O"
+        - "/dev/null"
+        - "--tries=1"
+        - "http://localhost:3313/api/health/ready"
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  transmute_data:
+```
+
+Create `./pdf-custom.css` on the host **before** starting the stack. If you bind-mount a path that does not exist yet, Docker may create a directory with that name instead of a file.
+
+---
+
+## Docker: Use the Data Volume
+
+If you already mount the data volume to the host (or can copy into it), place the file at `pdf/custom.css` inside that volume — for example `/app/data/pdf/custom.css` in the container. No extra bind mount is needed.
+
+---
+
+## Notes
+
+- This applies to document → PDF conversions that go through the Pandoc / WeasyPrint path (for example Markdown → PDF).
+- Removing or renaming `custom.css` falls back to the built-in compact stylesheet on the next conversion.
+- Related storage layout is controlled by `DATA_DIR`; see [Environment Variables](/docs/environment-variables/).
