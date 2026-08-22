@@ -90,6 +90,18 @@
     ]
   },
   {
+    "id": "ai",
+    "full_name": "Adobe Illustrator Artwork",
+    "classification": "image",
+    "description": "AI, or Adobe Illustrator Artwork, is a vector graphics file format used by Adobe Illustrator for creating and storing illustrations, logos, and other graphic designs.",
+    "extensions": [
+      "ai"
+    ],
+    "aliases": [
+      "ai"
+    ]
+  },
+  {
     "id": "aiff",
     "full_name": "Audio Interchange File Format",
     "classification": "audio",
@@ -236,6 +248,30 @@
     ]
   },
   {
+    "id": "cdr",
+    "full_name": "CorelDRAW Image File",
+    "classification": "image",
+    "description": "CDR, or CorelDRAW Image File, is a vector graphics file format used by CorelDRAW for creating and storing illustrations, logos, and other graphic designs.",
+    "extensions": [
+      "cdr"
+    ],
+    "aliases": [
+      "cdr"
+    ]
+  },
+  {
+    "id": "cdt",
+    "full_name": "CorelDRAW Template File",
+    "classification": "image",
+    "description": "CDT, or CorelDRAW Template File, is a file format used by CorelDRAW for storing template designs that can be used as a starting point for new projects.",
+    "extensions": [
+      "cdt"
+    ],
+    "aliases": [
+      "cdt"
+    ]
+  },
+  {
     "id": "csv",
     "full_name": "Comma-Separated Values",
     "classification": "data",
@@ -293,6 +329,18 @@
     ],
     "aliases": [
       "dib"
+    ]
+  },
+  {
+    "id": "doc",
+    "full_name": "Microsoft Word Document",
+    "classification": "document",
+    "description": "DOC, or Microsoft Word Document, is a file format used by Microsoft Word for storing text documents. It supports various features such as text formatting, images, tables, and other document elements.",
+    "extensions": [
+      "doc"
+    ],
+    "aliases": [
+      "doc"
     ]
   },
   {
@@ -727,6 +775,18 @@
     ]
   },
   {
+    "id": "m4b",
+    "full_name": "MPEG-4 Audiobook",
+    "classification": "audio",
+    "description": "M4B, or MPEG-4 Audiobook, is an audio file container used for storing audiobooks. It is commonly used for audiobook files and supports high-quality audio compression.",
+    "extensions": [
+      "m4b"
+    ],
+    "aliases": [
+      "m4b"
+    ]
+  },
+  {
     "id": "m4v",
     "full_name": "MPEG-4 Video",
     "classification": "video",
@@ -909,6 +969,18 @@
     ]
   },
   {
+    "id": "numbers",
+    "full_name": "Numbers Spreadsheet",
+    "classification": "data",
+    "description": "Numbers, or Numbers Spreadsheet, is a file format used for spreadsheet documents created with Apple's Numbers application.",
+    "extensions": [
+      "numbers"
+    ],
+    "aliases": [
+      "numbers"
+    ]
+  },
+  {
     "id": "obj",
     "full_name": "Object File",
     "classification": "model",
@@ -1087,6 +1159,18 @@
     ],
     "aliases": [
       "p7m"
+    ]
+  },
+  {
+    "id": "pages",
+    "full_name": "Pages Document",
+    "classification": "document",
+    "description": "Pages, or Pages Document, is a file format used for word processing documents created with Apple's Pages application.",
+    "extensions": [
+      "pages"
+    ],
+    "aliases": [
+      "pages"
     ]
   },
   {
@@ -1786,6 +1870,18 @@
     ],
     "aliases": [
       "vcf"
+    ]
+  },
+  {
+    "id": "vsdx",
+    "full_name": "Visio Drawing",
+    "classification": "document",
+    "description": "VSDX, or Visio Drawing, is a file format used for storing diagrams and vector graphics created with Microsoft Visio.",
+    "extensions": [
+      "vsdx"
+    ],
+    "aliases": [
+      "vsdx"
     ]
   },
   {

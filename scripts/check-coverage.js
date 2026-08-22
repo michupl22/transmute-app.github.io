@@ -5,7 +5,7 @@
  *
  * Checks for:
  *   1. Formats in supported_conversions.json missing from media_types.json
- *   2. Formats in media_types.json missing a sample file in transmute-app/samples-examples
+ *   2. Formats in media_types.json missing a sample file in transmute-app/transmute
  *
  * Usage:  node scripts/check-coverage.js
  */
@@ -131,7 +131,7 @@ async function main() {
     })
     .sort()
 
-  printSection('Media types missing a sample file in samples-examples', missingSamples)
+  printSection('Media types missing a sample file in transmute-app/transmute', missingSamples)
 
   // ── Summary ──────────────────────────────────────────────────────
 
